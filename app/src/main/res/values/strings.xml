@@ -12,6 +12,12 @@
     <string name="SI">Converting Numbers From One Number System To Another</string>
     <string name="theory_app">Information:</string>
     <string name="test">Test test test</string>
+    <string name="settings">Settings</string>
+    <string name="language">Change language</string>
+    <string name="chooseStyle">Choose theme:</string>
+    <string name="style">Change style</string>
+    <string name="chooseLanguage">Choose language:</string>
+    <string name="theory_main">Read the theory for:</string>
 
     <string name="instruction">
         \n
