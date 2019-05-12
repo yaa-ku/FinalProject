@@ -114,5 +114,20 @@
         app:srcCompat="@drawable/ic_navigate_before"
         android:onClick="onBack2"/>
 
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="249dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.977"
+        app:srcCompat="@drawable/plant12" />
+
 
 </android.support.constraint.ConstraintLayout>
