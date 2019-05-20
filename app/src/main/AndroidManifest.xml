@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainTheoryTheory"></activity>
+        <activity android:name=".Integer"></activity>
+        <activity android:name=".Si" />
+        <activity android:name=".SiInfo" />
+        <activity android:name=".DecomalFractionsInfo" />
+        <activity android:name=".CommonFractionsInfo" />
+        <activity android:name=".CommonFractions" />
+        <activity android:name=".DecimalFractions" />
+        <activity android:name=".IntegerInfo" />
+        <activity android:name=".MainTheoryTheory" />
         <activity android:name=".ChangeStyle" />
         <activity android:name=".ChangeLanguage" />
         <activity android:name=".Settings" />

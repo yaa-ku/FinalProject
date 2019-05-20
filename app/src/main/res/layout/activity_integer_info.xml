@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".mainTheory"
-    android:background="@color/colorFontLight">
+    android:background="@color/colorFontLight"
+    tools:context=".IntegerInfo">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
         android:layout_height="150dp"
         android:background="@color/colorFontDark"
-        android:orientation="vertical">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/theory_app"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/integer_numbers"
             android:textColor="@color/colorText"
-            android:textSize="55sp"
+            android:textSize="50sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,26 +44,25 @@
                 android:id="@+id/text_help"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:isScrollContainer="true"
-                android:text="@string/instruction"
                 android:gravity="center"
+                android:isScrollContainer="true"
+                android:text="@string/IntegerTheory"
                 android:textColor="@color/colorText"
                 android:textSize="30sp" />
 
             <ImageButton
-                tools:ignore="ContentDescription"
                 android:id="@+id/backToStart_button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_navigate_before"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
-                android:layout_gravity="center"
-                android:onClick="onBack"
-                />
-
+                android:background="@drawable/ic_navigate_before"
+                android:onClick="onBack7"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
     </ScrollView>
 
-</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
