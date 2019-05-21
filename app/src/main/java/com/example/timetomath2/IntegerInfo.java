@@ -28,7 +28,7 @@ public class IntegerInfo extends AppCompatActivity {
     }
 
     public void onBack7(View view) {
-        Intent intent = new Intent(IntegerInfo.this, mainTheory.class);
+        Intent intent = new Intent(IntegerInfo.this, MainTheoryTheory.class);
         startActivity(intent);
     }
 
