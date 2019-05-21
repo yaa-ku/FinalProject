@@ -16,10 +16,39 @@
     <string name="language">Change language</string>
     <string name="chooseStyle">Choose theme:</string>
     <string name="t1">Theme Green</string>
+    <string name="picture1">\n Перевод из 2-ой в 10-ую СС
+        \n
+\n Для перехода из двоичной системы счисления в десятичную необходимо двоичное число представить в виде суммы степеней двойки и найти её десятичное значение
+</string>
+    <string name="picture2">
+        \n <b> Перевод чисел из 10-ой СС в 2-ую СС</b>
+        \n
+        \n <b> Правила перевода: </b>
+        \n
+\n 1.	Разделить десятичное число на 2. Получится частное и остаток.
+        \n
+\n 2.	Частное опять разделить на 2. Выполнять деление до тех пор, пока последнее частное не станет меньшим 2.
+        \n
+\n 3.	Записать последнее частное и все остатки в обратном порядке. Полученное число и будет двоичной записью исходного десятичного числа.
+
+    </string>
+    <string name="picture3">
+       \n  Перевод чисел из 10-ой СС в 2-ю СС
+        \n
+\n Записываем выделенные остатки в обратном порядке
+    </string>
     <string name="t2">Theme Orange</string>
+    <string name="picture4"> <b> Перевод чисел из 10-й СС в 8-ю СС </b></string>
     <string name="style">Change style</string>
     <string name="chooseLanguage">Choose language:</string>
     <string name="theory_main">Read the theory for:</string>
+    <string name="picture5">Перевод чисел из 10-ой СС в 16-ю</string>
+
+    <string name="link">
+        \n Источник: https://programforyou.ru/calculators/number-systems
+        \n
+\n http://900igr.net/prezentacija/matematika/vidy-sistem-schislenija-61131/desjatichnoe-znachenie-21.html
+    </string>
 
     <string name="instruction">
         \n

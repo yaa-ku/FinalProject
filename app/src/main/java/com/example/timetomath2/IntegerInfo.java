@@ -18,12 +18,12 @@ public class IntegerInfo extends AppCompatActivity {
         editor = sPref.edit();
         switch(sPref.getString("app_theme","")){
             case "1":
-                setContentView(R.layout.activity_change_style);
+                setContentView(R.layout.activity_integer_info);
                 break;
             case "2":
-                setContentView(R.layout.activity_change_style2);
+                setContentView(R.layout.activity_integer_theory2);
                 break;
-            default: setContentView(R.layout.activity_change_style);
+            default: setContentView(R.layout.activity_integer_info);
         }
     }
 
@@ -31,6 +31,5 @@ public class IntegerInfo extends AppCompatActivity {
         Intent intent = new Intent(IntegerInfo.this, mainTheory.class);
         startActivity(intent);
     }
-
 
 }
