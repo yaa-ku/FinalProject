@@ -31,4 +31,9 @@ public class startGame extends AppCompatActivity {
         Intent intent = new Intent(startGame.this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void onInt(View view) {
+        Intent intent = new Intent(startGame.this, Integer.class);
+        startActivity(intent);
+    }
 }

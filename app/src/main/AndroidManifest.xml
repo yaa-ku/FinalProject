@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Integer"></activity>
+        <activity android:name=".SiResult"></activity>
+        <activity android:name=".CommonFractionsResult" />
+        <activity android:name=".DecimalFractionsResult" />
+        <activity android:name=".IntegerResult" />
+        <activity android:name=".Integer" />
         <activity android:name=".Si" />
         <activity android:name=".SiInfo" />
         <activity android:name=".DecomalFractionsInfo" />
