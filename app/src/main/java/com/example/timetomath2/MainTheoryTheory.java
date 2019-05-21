@@ -29,4 +29,24 @@ public class MainTheoryTheory extends AppCompatActivity {
         Intent intent = new Intent(MainTheoryTheory.this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void infoInt(View view) {
+        Intent intent = new Intent(MainTheoryTheory.this, IntegerInfo.class);
+        startActivity(intent);
+    }
+
+    public void infoDec(View view) {
+        Intent intent = new Intent(MainTheoryTheory.this, DecomalFractionsInfo.class);
+        startActivity(intent);
+    }
+
+    public void infoCom(View view) {
+        Intent intent = new Intent(MainTheoryTheory.this, CommonFractionsInfo.class);
+        startActivity(intent);
+    }
+
+    public void infoSi(View view) {
+        Intent intent = new Intent(MainTheoryTheory.this, SiInfo.class);
+        startActivity(intent);
+    }
 }

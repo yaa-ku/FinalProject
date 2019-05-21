@@ -22,7 +22,7 @@
             android:gravity="center"
             android:text="@string/SI"
             android:textColor="@color/colorText"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -48,14 +48,14 @@
                 android:isScrollContainer="true"
                 android:text="@string/SiTheory"
                 android:textColor="@color/colorText"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/picture1"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:gravity="center"/>
 
 
@@ -65,7 +65,7 @@
                 android:gravity="center"
                 android:text="@string/picture2"
                 android:textColor="@color/colorText"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/imageView13"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/picture3"
                 android:textColor="@color/colorText"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/imageView14"
@@ -93,7 +93,7 @@
                 android:layout_gravity="center"
                 android:text="@string/picture4"
                 android:textColor="@color/colorText"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/imageView15"
@@ -107,7 +107,7 @@
                 android:layout_gravity="center"
                 android:text="@string/picture5"
                 android:textColor="@color/colorText"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/imageView16"
@@ -121,7 +121,7 @@
                 android:layout_gravity="center"
                 android:text="@string/link"
                 android:textColor="@color/colorText"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageButton
                 android:id="@+id/onBackButton44"

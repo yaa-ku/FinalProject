@@ -24,12 +24,13 @@
             android:gravity="center"
             android:text="@string/theory_main"
             android:textColor="@color/colorText"
-            android:textSize="50sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button_intinfo"
+        android:onClick="infoInt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -38,13 +39,14 @@
         android:background="@color/colorFontDark2"
         android:text="@string/integer_numbers"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <Button
         android:id="@+id/button_decinfo"
+        android:onClick="infoDec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -54,7 +56,7 @@
         android:background="@color/colorFontDark2"
         android:text="@string/decimal_fractions"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -64,6 +66,7 @@
 
     <Button
         android:id="@+id/button_cominfo"
+        android:onClick="infoCom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -73,7 +76,7 @@
         android:background="@color/colorFontDark2"
         android:text="@string/common_Fractions"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -82,6 +85,8 @@
         app:layout_constraintVertical_bias="0.073" />
 
     <Button
+        android:id="@+id/button_siinfo"
+        android:onClick="infoSi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -91,7 +96,7 @@
         android:background="@color/colorFontDark2"
         android:text="@string/SI"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

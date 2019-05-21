@@ -24,7 +24,7 @@
             android:gravity="center"
             android:text="@string/theory_main"
             android:textColor="@color/colorText"
-            android:textSize="50sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -38,7 +38,8 @@
         android:background="@color/colorFontDark"
         android:text="@string/integer_numbers"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:onClick="infoInt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
@@ -54,7 +55,8 @@
         android:background="@color/colorFontDark"
         android:text="@string/decimal_fractions"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:onClick="infoDec"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -73,7 +75,8 @@
         android:background="@color/colorFontDark"
         android:text="@string/common_Fractions"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:onClick="infoCom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -92,7 +95,8 @@
         android:background="@color/colorFontDark"
         android:text="@string/SI"
         android:textColor="@color/colorText"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:onClick="infoSi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
