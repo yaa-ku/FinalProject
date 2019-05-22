@@ -40,7 +40,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/q1_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="75dp"
@@ -52,19 +52,19 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/res1_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="@string/test"
+                android:hint="@string/answer"
                 android:textColor="@color/colorText"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/q1_int" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/q2_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -73,22 +73,22 @@
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/res1_int" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/re2_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="@string/test"
                 android:textColor="@color/colorText"
                 android:textSize="25sp"
+                android:hint="@string/answer"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/q2_int" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/q3_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -97,22 +97,22 @@
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintTop_toBottomOf="@+id/re2_int" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/res3_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="@string/test"
                 android:textColor="@color/colorText"
                 android:textSize="25sp"
+                android:hint="@string/answer"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                app:layout_constraintTop_toBottomOf="@+id/q3_int" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/q4_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -121,22 +121,22 @@
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                app:layout_constraintTop_toBottomOf="@+id/res3_int" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/res4_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="@string/test"
+                android:hint="@string/answer"
                 android:textColor="@color/colorText"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                app:layout_constraintTop_toBottomOf="@+id/q4_int" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/q5_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -145,22 +145,22 @@
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText4" />
+                app:layout_constraintTop_toBottomOf="@+id/res4_int" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/res5_int"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="150dp"
-                android:hint="@string/test"
+                android:hint="@string/answer"
                 android:textColor="@color/colorText"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/q5_int"
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
@@ -171,14 +171,14 @@
                 android:background="@color/colorFontDark"
                 android:gravity="center"
                 android:onClick="onBack11"
-                android:text="@string/test"
+                android:text="@string/finish"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+                app:layout_constraintTop_toBottomOf="@+id/res5_int" />
 
 
         </android.support.constraint.ConstraintLayout>

@@ -36,4 +36,19 @@ public class startGame extends AppCompatActivity {
         Intent intent = new Intent(startGame.this, Integer.class);
         startActivity(intent);
     }
+
+    public void onCom(View view) {
+        Intent intent = new Intent(startGame.this, CommonFractions.class);
+        startActivity(intent);
+    }
+
+    public void onDec(View view) {
+        Intent intent = new Intent(startGame.this, DecimalFractions.class);
+        startActivity(intent);
+    }
+
+    public void onSi(View view) {
+        Intent intent = new Intent(startGame.this, Si.class);
+        startActivity(intent);
+    }
 }

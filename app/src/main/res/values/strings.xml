@@ -42,6 +42,10 @@
     <string name="style">Change style</string>
     <string name="chooseLanguage">Choose language:</string>
     <string name="theory_main">Read the theory for:</string>
+    <string name="answer">Enter your answer</string>
+    <string name="num">Enter the numerator</string>
+    <string name="den">Enter the denominator</string>
+    <string name="finish">Finish test</string>
     <string name="picture5">Перевод чисел из 10-ой СС в 16-ю</string>
 
     <string name="link">

@@ -46,6 +46,10 @@
     <string name="t1">Зелёная тема</string>
     <string name="t2">Оранжевая тема</string>
     <string name="style">Смена стиля</string>
+    <string name="answer">Введите ваш ответ</string>
+    <string name="num">Введите числитель</string>
+    <string name="den">Введите знаменатель</string>
+    <string name="finish">Завершите тест</string>
     <string name="chooseLanguage">Сменить язык:</string>
     <string name="theory_main">Ознакомиться с теорией:</string>
 
