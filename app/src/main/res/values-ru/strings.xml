@@ -49,8 +49,12 @@
     <string name="answer">Введите ваш ответ</string>
     <string name="num">Введите числитель</string>
     <string name="den">Введите знаменатель</string>
+    <string name="answerRight">Правильный ответ: </string>
+    <string name="answerYour">Ваш ответ: </string>
     <string name="finish">Завершите тест</string>
+    <string name="backMenu">Вернуться на главную страницу</string>
     <string name="chooseLanguage">Сменить язык:</string>
+    <string name="score">Общий результат: </string>
     <string name="theory_main">Ознакомиться с теорией:</string>
 
     <string name="instruction">
