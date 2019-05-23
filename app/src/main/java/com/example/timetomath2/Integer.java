@@ -37,7 +37,7 @@ public class Integer extends AppCompatActivity {
     String que5 = myInt15.printFourth(myInt16, myInt17,myInt18);
     int res5 = myInt15.getFourthResult(myInt16, myInt17,myInt18);
 
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
