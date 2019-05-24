@@ -64,11 +64,11 @@ public class Si extends AppCompatActivity {
         TextView qu3 = (TextView) findViewById(R.id.q3_si);
         TextView qu4 = (TextView) findViewById(R.id.q4_si);
         TextView qu5 = (TextView) findViewById(R.id.q5_si);
-        qu1.setText(que1+" "+res1);
-        qu2.setText(que2+" "+res2);
-        qu3.setText(que3+" "+res3);
-        qu4.setText(que4+" "+res4);
-        qu5.setText(que5+" "+res5);
+        qu1.setText(que1);
+        qu2.setText(que2);
+        qu3.setText(que3);
+        qu4.setText(que4);
+        qu5.setText(que5);
     }
 
     public void resSi(View view) {
