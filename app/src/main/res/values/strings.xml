@@ -50,6 +50,7 @@
     <string name="answerYour">Your answer: </string>
     <string name="score">Total score: </string>
     <string name="backMenu">Back to main page</string>
+    <string name="si_someinfo"><b>ВНИМАНИЕ!</b> Все буквы пишите строго с маленькой буквы и только на английском языке!</string>
     <string name="picture5">Перевод чисел из 10-ой СС в 16-ю</string>
 
     <string name="link">

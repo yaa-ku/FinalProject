@@ -45,6 +45,7 @@
     </string>
     <string name="t1">Зелёная тема</string>
     <string name="t2">Оранжевая тема</string>
+    <string name="si_someinfo"><b>ВНИМАНИЕ!</b> Все буквы пишите строго с маленькой буквы и только на английском языке!</string>
     <string name="style">Смена стиля</string>
     <string name="answer">Введите ваш ответ</string>
     <string name="num">Введите числитель</string>
