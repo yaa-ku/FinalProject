@@ -21,29 +21,29 @@ public class Integer extends AppCompatActivity {
     IntegerTest myInt3 = new IntegerTest(-101,101);
     IntegerTest myInt4 = new IntegerTest(-1001,1001);
     String que1 = myInt.printFirst(myInt2, myInt3);
-    int res1 = myInt.getFirstResult(myInt2, myInt3);
+    String res1 = myInt.getFirstResult(myInt2, myInt3);
     IntegerTest myInt5 = new IntegerTest(-101,101);
     IntegerTest myInt6 = new IntegerTest(-101,101);
     IntegerTest myInt7 = new IntegerTest(-101,101);
     String que2 = myInt5.printSecond(myInt6, myInt7);
-    int res2 = myInt5.getSecondResult(myInt6, myInt7);
+    String res2 = myInt5.getSecondResult(myInt6, myInt7);
     IntegerTest myInt8 = new IntegerTest(-101,101);
     IntegerTest myInt10 = new IntegerTest(-101,101);
     IntegerTest myInt9 = new IntegerTest(myInt10);
     String que3 = myInt8.printThird(myInt9, myInt10);
-    int res3 = myInt8.getThirdResult(myInt9, myInt10);
+    String res3 = myInt8.getThirdResult(myInt9, myInt10);
     IntegerTest myInt11 = new IntegerTest(-1001,1001);
     IntegerTest myInt12 = new IntegerTest(-1001,1001);
     IntegerTest myInt13 = new IntegerTest(-1001,1001);
     IntegerTest myInt14 = new IntegerTest(-1001,1001);
     String que4 = myInt11.printFourth(myInt12, myInt13,myInt14);
-    int res4 = myInt11.getFourthResult(myInt12, myInt13,myInt14);
+    String res4 = myInt11.getFourthResult(myInt12, myInt13,myInt14);
     IntegerTest myInt15 = new IntegerTest(-1001,1001);
     IntegerTest myInt17 = new IntegerTest(-1001,1001);
     IntegerTest myInt16 = new IntegerTest(myInt17);
     IntegerTest myInt18 = new IntegerTest(-1001,1001);
     String que5 = myInt15.printFourth(myInt16, myInt17,myInt18);
-    int res5 = myInt15.getFourthResult(myInt16, myInt17,myInt18);
+    String res5 = myInt15.getFourthResult(myInt16, myInt17,myInt18);
 
 
 
@@ -127,14 +127,14 @@ public class Integer extends AppCompatActivity {
             currentInt=fromInt.getNumber()*curr;
         }
 
-        public int getFirstResult(IntegerTest bInt, IntegerTest cInt){
+        public String getFirstResult(IntegerTest bInt, IntegerTest cInt){
             int res, a, b, c;
             a = IntegerTest.this.getNumber();
             b = bInt.getNumber();
             c = cInt.getNumber();
 
             res = a + b +c;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printFirst(IntegerTest bInt, IntegerTest cInt){
@@ -163,14 +163,14 @@ public class Integer extends AppCompatActivity {
 
         }
 
-        public int getSecondResult(IntegerTest bInt, IntegerTest cInt){
+        public String getSecondResult(IntegerTest bInt, IntegerTest cInt){
             int res, a, b, c;
             a = IntegerTest.this.getNumber();
             b = bInt.getNumber();
             c = cInt.getNumber();
 
             res= a*(b+c);
-            return res;
+            return String.valueOf(res);
         }
 
         public String printSecond(IntegerTest bInt, IntegerTest cInt){
@@ -191,7 +191,7 @@ public class Integer extends AppCompatActivity {
 
         }
 
-        public int getThirdResult(IntegerTest bInt, IntegerTest cInt){
+        public String getThirdResult(IntegerTest bInt, IntegerTest cInt){
             int res, a, b, c;
             a = IntegerTest.this.getNumber();
             b = bInt.getNumber();
@@ -199,7 +199,7 @@ public class Integer extends AppCompatActivity {
 
             res = b/c;
             res+= a;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printThird(IntegerTest bInt, IntegerTest cInt){
@@ -221,7 +221,7 @@ public class Integer extends AppCompatActivity {
             return res+"=";
         }
 
-        public int getFourthResult(IntegerTest bInt, IntegerTest cInt, IntegerTest dInt){
+        public String getFourthResult(IntegerTest bInt, IntegerTest cInt, IntegerTest dInt){
             int res, a, b, c, d;
             a = IntegerTest.this.getNumber();
             b = bInt.getNumber();
@@ -229,7 +229,7 @@ public class Integer extends AppCompatActivity {
             d = dInt.getNumber();
 
             res= a+b+c+d;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printFourth(IntegerTest bInt, IntegerTest cInt, IntegerTest dInt){
@@ -264,7 +264,7 @@ public class Integer extends AppCompatActivity {
             return res+"=";
         }
 
-        public int getFifthResult(IntegerTest bInt, IntegerTest cInt, IntegerTest dInt){
+        public String getFifthResult(IntegerTest bInt, IntegerTest cInt, IntegerTest dInt){
             int res, a, b, c, d;
             a = IntegerTest.this.getNumber();
             b = bInt.getNumber();
@@ -273,7 +273,7 @@ public class Integer extends AppCompatActivity {
 
             res = b/c;
             res = (a+res)*d;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printFifth(IntegerTest bInt, IntegerTest cInt, IntegerTest dInt){

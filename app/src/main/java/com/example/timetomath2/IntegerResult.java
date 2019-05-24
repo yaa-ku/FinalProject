@@ -39,15 +39,15 @@ public class IntegerResult extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        //String r1 = intent.getStringExtra("RIGHT_1");
+        String r1 = intent.getStringExtra("RIGHT_1");
         String y1 = intent.getStringExtra("YOUR_1");
-        //String r2 = intent.getStringExtra("RIGHT_2");
+        String r2 = intent.getStringExtra("RIGHT_2");
         String y2 = intent.getStringExtra("YOUR_2");
-       // String r3 = intent.getStringExtra("RIGHT_3");
+        String r3 = intent.getStringExtra("RIGHT_3");
         String y3 = intent.getStringExtra("YOUR_3");
-       // String r4 = intent.getStringExtra("RIGHT_4");
+        String r4 = intent.getStringExtra("RIGHT_4");
         String y4 = intent.getStringExtra("YOUR_4");
-        //String r5 = intent.getStringExtra("RIGHT_5");
+        String r5 = intent.getStringExtra("RIGHT_5");
         String y5 = intent.getStringExtra("YOUR_5");
 
         your1.setText("Your answer:"+" "+y1);
@@ -55,6 +55,12 @@ public class IntegerResult extends AppCompatActivity {
         your3.setText("Your answer:"+" "+y3);
         your4.setText("Your answer:"+" "+y4);
         your5.setText("Your answer:"+" "+y5);
+
+        right1.setText("Right answer"+" "+r1);
+        right2.setText("Right answer"+" "+r2);
+        right3.setText("Right answer"+" "+r3);
+        right4.setText("Right answer"+" "+r4);
+        right5.setText("Right answer"+" "+r5);
 
 
     }
