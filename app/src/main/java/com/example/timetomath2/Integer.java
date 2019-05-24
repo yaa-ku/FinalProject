@@ -4,9 +4,17 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Integer extends AppCompatActivity {
+
+    EditText ans1;
+    EditText ans2;
+    EditText ans3;
+    EditText ans4;
+    EditText ans5;
+
 
     IntegerTest myInt = new IntegerTest(-101,101);
     IntegerTest myInt2 = new IntegerTest(-101,101);
@@ -44,6 +52,12 @@ public class Integer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_integer);
 
+        ans1 = (EditText) findViewById(R.id.res1_int);
+        ans2 = (EditText) findViewById(R.id.res2_int);
+        ans3 = (EditText) findViewById(R.id.res3_int);
+        ans4 = (EditText) findViewById(R.id.res4_int);
+        ans5 = (EditText) findViewById(R.id.res5_int);
+
         TextView qu1 = (TextView) findViewById(R.id.q1_int);
         TextView qu2 = (TextView) findViewById(R.id.q2_int);
         TextView qu3 = (TextView) findViewById(R.id.q3_int);
@@ -60,6 +74,19 @@ public class Integer extends AppCompatActivity {
 
     public void onBack11(View view) {
         Intent intent = new Intent(Integer.this, IntegerResult.class);
+
+        intent.putExtra("RIGHT_1",res1);
+        intent.putExtra("YOUR_1", ans1.getText().toString());
+        intent.putExtra("RIGHT_2",res2);
+        intent.putExtra("YOUR_2", ans2.getText().toString());
+        intent.putExtra("RIGHT_3",res3);
+        intent.putExtra("YOUR_3", ans3.getText().toString());
+        intent.putExtra("RIGHT_4",res4);
+        intent.putExtra("YOUR_4", ans4.getText().toString());
+        intent.putExtra("RIGHT_5",res5);
+        intent.putExtra("YOUR_5", ans5.getText().toString());
+
+
         startActivity(intent);
     }
 
