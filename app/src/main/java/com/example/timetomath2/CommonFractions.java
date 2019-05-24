@@ -94,11 +94,11 @@ String res1_den = myCom.getFirstResultDen(myCom2);
         TextView qu3 = (TextView) findViewById(R.id.q3_com);
         TextView qu4 = (TextView) findViewById(R.id.q4_com);
         TextView qu5 = (TextView) findViewById(R.id.q5_com);
-        qu1.setText(que1+" "+res1_num+" "+res1_den);
-        qu2.setText(que2+" "+res2_num+" "+res2_den);
-        qu3.setText(que3+" "+res3_num+" "+res3_den);
-        qu4.setText(que4+" "+res4_num+" "+res4_den);
-        qu5.setText(que5+" "+res5_num+" "+res5_den);
+        qu1.setText(que1+" = ");
+        qu2.setText(que2+" = ");
+        qu3.setText(que3+" = ");
+        qu4.setText(que4+" = ");
+        qu5.setText(que5+" = ");
     }
 
     public void resCom(View view) {
