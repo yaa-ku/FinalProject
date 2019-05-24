@@ -50,11 +50,12 @@ public class IntegerResult extends AppCompatActivity {
         //String r5 = intent.getStringExtra("RIGHT_5");
         String y5 = intent.getStringExtra("YOUR_5");
 
-        your1.setText(y1);
-        your2.setText(y2);
-        your3.setText(y3);
-        your4.setText(y4);
-        your5.setText(y5);
+        your1.setText("Your answer:"+" "+y1);
+        your2.setText("Your answer:"+" "+y2);
+        your3.setText("Your answer:"+" "+y3);
+        your4.setText("Your answer:"+" "+y4);
+        your5.setText("Your answer:"+" "+y5);
+
 
     }
 
