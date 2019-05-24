@@ -4,32 +4,39 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class DecimalFractions extends AppCompatActivity {
+
+    EditText ans1;
+    EditText ans2;
+    EditText ans3;
+    EditText ans4;
+    EditText ans5;
 
     DecimalFractionsTest myCom = new DecimalFractionsTest(3);
     DecimalFractionsTest myCom2 = new DecimalFractionsTest(3);
     DecimalFractionsTest myCom3 = new DecimalFractionsTest(3);
     String que1=myCom.printFirst(myCom2, myCom3);
-    double res1= myCom.getFirstResult(myCom2, myCom3);
+    String res1= myCom.getFirstResult(myCom2, myCom3);
     DecimalFractionsTest myCom4 = new DecimalFractionsTest(2);
     DecimalFractionsTest myCom5 = new DecimalFractionsTest(2);
     String que2=myCom4.printSecond(myCom5);
-    double res2= myCom4.getSecondResult(myCom5);
+    String res2= myCom4.getSecondResult(myCom5);
     DecimalFractionsTest myCom6 = new DecimalFractionsTest(1);
     DecimalFractionsTest myCom7 = new DecimalFractionsTest(1);
     String que3=myCom6.printThird(myCom7);
-    double res3= myCom6.getThirdResult(myCom7);
+    String res3= myCom6.getThirdResult(myCom7);
     DecimalFractionsTest myCom8 = new DecimalFractionsTest(3);
     DecimalFractionsTest myCom9 = new DecimalFractionsTest(1);
     DecimalFractionsTest myCom10 = new DecimalFractionsTest(1);
     String que4=myCom8.printFourth(myCom9,myCom10);
-    double res4= myCom8.getFourthResult(myCom9,myCom10);
+    String res4= myCom8.getFourthResult(myCom9,myCom10);
     DecimalFractionsTest myCom11 = new DecimalFractionsTest(2);
     DecimalFractionsTest myCom12 = new DecimalFractionsTest(2);
     String que5=myCom11.printFifth(myCom12);
-    double res5= myCom11.getFifthResult(myCom12);
+    String res5= myCom11.getFifthResult(myCom12);
 
 
     @Override
@@ -48,10 +55,40 @@ public class DecimalFractions extends AppCompatActivity {
         q3.setText(que3+" "+res3);
         q4.setText(que4+" "+res4);
         q5.setText(que5+" "+res5);
+
+        ans1 = (EditText) findViewById(R.id.res1_dec);
+        ans2 = (EditText) findViewById(R.id.res2_dec);
+        ans3 = (EditText) findViewById(R.id.res3_dec);
+        ans4 = (EditText) findViewById(R.id.res4_dec);
+        ans5 = (EditText) findViewById(R.id.res5_dec);
+
+        TextView qu1 = (TextView) findViewById(R.id.q1_dec);
+        TextView qu2 = (TextView) findViewById(R.id.q2_dec);
+        TextView qu3 = (TextView) findViewById(R.id.q3_dec);
+        TextView qu4 = (TextView) findViewById(R.id.q4_dec);
+        TextView qu5 = (TextView) findViewById(R.id.q5_dec);
+        qu1.setText(que1);
+        qu2.setText(que2);
+        qu3.setText(que3);
+        qu4.setText(que4);
+        qu5.setText(que5);
+
     }
 
     public void resDec(View view) {
         Intent intent = new Intent(DecimalFractions.this, DecimalFractionsResult.class);
+
+        intent.putExtra("RIGHT_1",res1);
+        intent.putExtra("YOUR_1", ans1.getText().toString());
+        intent.putExtra("RIGHT_2",res2);
+        intent.putExtra("YOUR_2", ans2.getText().toString());
+        intent.putExtra("RIGHT_3",res3);
+        intent.putExtra("YOUR_3", ans3.getText().toString());
+        intent.putExtra("RIGHT_4",res4);
+        intent.putExtra("YOUR_4", ans4.getText().toString());
+        intent.putExtra("RIGHT_5",res5);
+        intent.putExtra("YOUR_5", ans5.getText().toString());
+
         startActivity(intent);
     }
 
@@ -118,13 +155,13 @@ public class DecimalFractions extends AppCompatActivity {
             return res+" = ";
         }
 
-        public double getFirstResult(DecimalFractionsTest b,DecimalFractionsTest c){
+        public String getFirstResult(DecimalFractionsTest b,DecimalFractionsTest c){
             double res;
             res=this.getValue()+b.getValue()+c.getValue();
             res=res*1000;
             res=(int)res;
             res=res/1000;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printSecond(DecimalFractionsTest b){
@@ -133,13 +170,13 @@ public class DecimalFractions extends AppCompatActivity {
             return res+" = ";
         }
 
-        public double getSecondResult(DecimalFractionsTest b){
+        public String getSecondResult(DecimalFractionsTest b){
             double res;
             res=this.getValue()*b.getValue();
             res=res*10000;
             res=(int)res;
             res=res/10000;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printThird(DecimalFractionsTest b){
@@ -148,13 +185,13 @@ public class DecimalFractions extends AppCompatActivity {
             return res+" = ";
         }
 
-        public double getThirdResult(DecimalFractionsTest b){
+        public String getThirdResult(DecimalFractionsTest b){
             double res;
             res=this.getValue()/b.getValue();
             res=res*1000;
             res=(int)res;
             res=res/1000;
-            return res;
+            return String.valueOf(res);
         }
 
         public String printFourth(DecimalFractionsTest b, DecimalFractionsTest c){
@@ -172,14 +209,14 @@ public class DecimalFractions extends AppCompatActivity {
             return res+" = ";
         }
 
-        public double getFourthResult(DecimalFractionsTest b, DecimalFractionsTest c){
+        public String getFourthResult(DecimalFractionsTest b, DecimalFractionsTest c){
             double res;
             res=b.getValue()*c.getValue();
             res=this.getValue()+res;
             res=res*1000;
             res=(int)res;
             res=res/1000;
-            return res;
+            return String.valueOf(res);
         }
         public String printFifth(DecimalFractionsTest b){
             String res;
@@ -199,14 +236,14 @@ public class DecimalFractions extends AppCompatActivity {
 
         }
 
-        public double getFifthResult(DecimalFractionsTest b){
+        public String getFifthResult(DecimalFractionsTest b){
             double res;
             res=this.getValue()+b.getValue();
             res=res/curr;
             res=res*1000;
             res=(int)res;
             res=res/1000;
-            return res;
+            return String.valueOf(res);
         }}
 
 }
