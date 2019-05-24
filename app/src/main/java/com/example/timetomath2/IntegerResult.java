@@ -20,6 +20,9 @@ public class IntegerResult extends AppCompatActivity {
     TextView your4;
     TextView your5;
 
+    TextView total;
+    int score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,8 @@ public class IntegerResult extends AppCompatActivity {
         your3 = (TextView)findViewById(R.id.textView13);
         your4 = (TextView)findViewById(R.id.textView15);
         your5 = (TextView)findViewById(R.id.textView17);
+
+        total = (TextView) findViewById(R.id.textView18);
 
         Intent intent = getIntent();
 
@@ -61,6 +66,28 @@ public class IntegerResult extends AppCompatActivity {
         right3.setText("Right answer"+" "+r3);
         right4.setText("Right answer"+" "+r4);
         right5.setText("Right answer"+" "+r5);
+
+        if(r1.equals(y1)){
+            score++;
+        }
+
+        if(r2.equals(y2)){
+            score++;
+        }
+
+        if(r3.equals(y3)){
+            score++;
+        }
+
+        if(r4.equals(y4)){
+            score++;
+        }
+
+        if(r5.equals(y5)){
+            score++;
+        }
+
+        total.setText("Total score: "+score);
 
 
     }
