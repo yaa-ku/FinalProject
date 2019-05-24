@@ -71,17 +71,17 @@ public class SiResult extends AppCompatActivity {
         String r5 = intent.getStringExtra("RIGHT_5");
         String y5 = intent.getStringExtra("YOUR_5");
 
-        your1.setText("Your answer:"+" "+y1);
-        your2.setText("Your answer:"+" "+y2);
-        your3.setText("Your answer:"+" "+y3);
-        your4.setText("Your answer:"+" "+y4);
-        your5.setText("Your answer:"+" "+y5);
+        your1.setText(getString(R.string.answerYour)+y1);
+        your2.setText(getString(R.string.answerYour)+y2);
+        your3.setText(getString(R.string.answerYour)+y3);
+        your4.setText(getString(R.string.answerYour)+y4);
+        your5.setText(getString(R.string.answerYour)+y5);
 
-        right1.setText("Right answer"+" "+r1);
-        right2.setText("Right answer"+" "+r2);
-        right3.setText("Right answer"+" "+r3);
-        right4.setText("Right answer"+" "+r4);
-        right5.setText("Right answer"+" "+r5);
+        right1.setText(getString(R.string.answerRight)+r1);
+        right2.setText(getString(R.string.answerRight)+r2);
+        right3.setText(getString(R.string.answerRight)+r3);
+        right4.setText(getString(R.string.answerRight)+r4);
+        right5.setText(getString(R.string.answerRight)+r5);
 
         if(r1.equals(y1)){
             score++;
@@ -103,7 +103,7 @@ public class SiResult extends AppCompatActivity {
             score++;
         }
 
-        total.setText("Total score: "+score);
+        total.setText(getString(R.string.score)+score);
     }
 
     public void onSiInfo(View view) {

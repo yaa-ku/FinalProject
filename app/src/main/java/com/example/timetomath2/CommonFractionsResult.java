@@ -83,17 +83,17 @@ public class CommonFractionsResult extends AppCompatActivity {
         String r5_d = intent.getStringExtra("RIGHT_5D");
         String y5_d= intent.getStringExtra("YOUR_5D");
 
-        your1.setText("Your answer: "+" "+y1_n+" / "+y1_d);
-        your2.setText("Your answer: "+" "+y2_n+" / "+y2_d);
-        your3.setText("Your answer: "+" "+y3_n+" / "+y3_d);
-        your4.setText("Your answer: "+" "+y4_n+" / "+y4_d);
-        your5.setText("Your answer: "+" "+y5_n+" / "+y5_d);
+        your1.setText(getString(R.string.answerYour)+y1_n+" / "+y1_d);
+        your2.setText(getString(R.string.answerYour)+y2_n+" / "+y2_d);
+        your3.setText(getString(R.string.answerYour)+y3_n+" / "+y3_d);
+        your4.setText(getString(R.string.answerYour)+y4_n+" / "+y4_d);
+        your5.setText(getString(R.string.answerYour)+y5_n+" / "+y5_d);
 
-        right1.setText("Right answer: "+" "+r1_n+" / "+r1_d);
-        right2.setText("Right answer: "+" "+r2_n+" / "+r2_d);
-        right3.setText("Right answer: "+" "+r3_n+" / "+r3_d);
-        right4.setText("Right answer: "+" "+r4_n+" / "+r4_d);
-        right5.setText("Right answer: "+" "+r5_n+" / "+r5_d);
+        right1.setText(getString(R.string.answerRight)+r1_n+" / "+r1_d);
+        right2.setText(getString(R.string.answerRight)+r2_n+" / "+r2_d);
+        right3.setText(getString(R.string.answerRight)+r3_n+" / "+r3_d);
+        right4.setText(getString(R.string.answerRight)+r4_n+" / "+r4_d);
+        right5.setText(getString(R.string.answerRight)+r5_n+" / "+r5_d);
 
         if((r1_n.equals(y1_n))&&(r1_d.equals(y1_d))){
             score++;
@@ -115,7 +115,7 @@ public class CommonFractionsResult extends AppCompatActivity {
             score++;
         }
 
-        total.setText("Total score: "+score);
+        total.setText(getString(R.string.score)+score);
 
     }
 
