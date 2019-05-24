@@ -4,9 +4,16 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Si extends AppCompatActivity {
+
+    EditText ans1;
+    EditText ans2;
+    EditText ans3;
+    EditText ans4;
+    EditText ans5;
 
     SI my = new SI();
     String que1 = my.printFirst();
@@ -30,6 +37,13 @@ public class Si extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_si);
 
+        ans1 = (EditText) findViewById(R.id.res1_si);
+        ans2 = (EditText) findViewById(R.id.res2_si);
+        ans3 = (EditText) findViewById(R.id.res3_si);
+        ans4 = (EditText) findViewById(R.id.res4_si);
+        ans5 = (EditText) findViewById(R.id.res5_si);
+
+
         TextView qu1 = (TextView) findViewById(R.id.q1_si);
         TextView qu2 = (TextView) findViewById(R.id.q2_si);
         TextView qu3 = (TextView) findViewById(R.id.q3_si);
@@ -44,6 +58,18 @@ public class Si extends AppCompatActivity {
 
     public void resSi(View view) {
         Intent intent = new Intent(Si.this, SiResult.class);
+
+        intent.putExtra("RIGHT_1",res1);
+        intent.putExtra("YOUR_1", ans1.getText().toString());
+        intent.putExtra("RIGHT_2",res2);
+        intent.putExtra("YOUR_2", ans2.getText().toString());
+        intent.putExtra("RIGHT_3",res3);
+        intent.putExtra("YOUR_3", ans3.getText().toString());
+        intent.putExtra("RIGHT_4",res4);
+        intent.putExtra("YOUR_4", ans4.getText().toString());
+        intent.putExtra("RIGHT_5",res5);
+        intent.putExtra("YOUR_5", ans5.getText().toString());
+
         startActivity(intent);
     }
 
