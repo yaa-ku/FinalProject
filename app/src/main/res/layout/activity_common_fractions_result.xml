@@ -161,7 +161,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
             <TextView
-                android:id="@+id/textView3112"
+                android:id="@+id/textView31124"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
@@ -188,7 +188,7 @@
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3112" />
+                app:layout_constraintTop_toBottomOf="@+id/textView31124" />
 
             <Button
                 android:layout_width="match_parent"

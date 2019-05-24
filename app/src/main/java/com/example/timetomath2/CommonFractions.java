@@ -4,44 +4,56 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class CommonFractions extends AppCompatActivity {
+
+    EditText ans1_n;
+    EditText ans2_n;
+    EditText ans3_n;
+    EditText ans4_n;
+    EditText ans5_n;
+    EditText ans1_d;
+    EditText ans2_d;
+    EditText ans3_d;
+    EditText ans4_d;
+    EditText ans5_d;
 
     CommonFractionTest myCom = new CommonFractionTest();
     CommonFractionTest myCom2 = new CommonFractionTest();
     CommonFractionTest myCom3 = new CommonFractionTest();
 
 String que1 = myCom.printFirst(myCom2);
-int res1_num = myCom.getFirstResultNum(myCom2);
-int res1_den = myCom.getFirstResultDen(myCom2);
+String res1_num = myCom.getFirstResultNum(myCom2);
+String res1_den = myCom.getFirstResultDen(myCom2);
 
     CommonFractionTest myCom4 = new CommonFractionTest(myCom2, myCom3);
     String que2 = myCom4.printSecond(myCom2, myCom3);
-    int res2_num = myCom4.getSecondResultNum(myCom2, myCom3);
-    int res2_den = myCom4.getSecondResultDen(myCom2, myCom3);
+    String res2_num = myCom4.getSecondResultNum(myCom2, myCom3);
+    String res2_den = myCom4.getSecondResultDen(myCom2, myCom3);
 
     CommonFractionTest myCom5 = new CommonFractionTest(10);
     CommonFractionTest myCom6 = new CommonFractionTest();
     CommonFractionTest myCom7 = new CommonFractionTest(10);
     String que3 = myCom5.printThird(myCom6, myCom7);
-    int res3_num = myCom5.getThirdResultNum(myCom6, myCom7);
-    int res3_den = myCom5.getThirdResultDen(myCom6, myCom7);
+    String res3_num = myCom5.getThirdResultNum(myCom6, myCom7);
+    String res3_den = myCom5.getThirdResultDen(myCom6, myCom7);
 
     CommonFractionTest myCom8 = new CommonFractionTest();
     CommonFractionTest myCom9 = new CommonFractionTest();
     CommonFractionTest myCom10 = new CommonFractionTest();
     String que4 = myCom8.printFourth(myCom9, myCom10);
-    int res4_num = myCom8.getFourthResultNum(myCom9, myCom10);
-    int res4_den = myCom8.getFourthResultDen(myCom9, myCom10);
+    String res4_num = myCom8.getFourthResultNum(myCom9, myCom10);
+    String res4_den = myCom8.getFourthResultDen(myCom9, myCom10);
 
     CommonFractionTest myCom11 = new CommonFractionTest(10);
     CommonFractionTest myCom12 = new CommonFractionTest();
     CommonFractionTest myCom13 = new CommonFractionTest();
     CommonFractionTest myCom14 = new CommonFractionTest(10);
     String que5 = myCom11.printFifth(myCom12, myCom13, myCom14);
-    int res5_num = myCom11.getFifthResultNum(myCom12, myCom13, myCom14);
-    int res5_den = myCom11.getFifthResultDen(myCom12, myCom13, myCom14);
+    String res5_num = myCom11.getFifthResultNum(myCom12, myCom13, myCom14);
+    String res5_den = myCom11.getFifthResultDen(myCom12, myCom13, myCom14);
 
 
 
@@ -49,6 +61,18 @@ int res1_den = myCom.getFirstResultDen(myCom2);
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_fractions);
+
+        ans1_n = (EditText) findViewById(R.id.num1);
+        ans2_n = (EditText) findViewById(R.id.num2);
+        ans3_n = (EditText) findViewById(R.id.num3);
+        ans4_n = (EditText) findViewById(R.id.num4);
+        ans5_n = (EditText) findViewById(R.id.num5);
+
+        ans1_d = (EditText) findViewById(R.id.den1);
+        ans2_d = (EditText) findViewById(R.id.den2);
+        ans3_d = (EditText) findViewById(R.id.den3);
+        ans4_d = (EditText) findViewById(R.id.den4);
+        ans5_d = (EditText) findViewById(R.id.den5);
 
         TextView qu1 = (TextView) findViewById(R.id.q1_com);
         TextView qu2 = (TextView) findViewById(R.id.q2_com);
@@ -64,6 +88,29 @@ int res1_den = myCom.getFirstResultDen(myCom2);
 
     public void resCom(View view) {
         Intent intent = new Intent(CommonFractions.this, CommonFractionsResult.class);
+
+        intent.putExtra("RIGHT_1N",res1_num);
+        intent.putExtra("YOUR_1N", ans1_n.getText().toString());
+        intent.putExtra("RIGHT_2N",res2_num);
+        intent.putExtra("YOUR_2N", ans2_n.getText().toString());
+        intent.putExtra("RIGHT_3N",res3_num);
+        intent.putExtra("YOUR_3N", ans3_n.getText().toString());
+        intent.putExtra("RIGHT_4N",res4_num);
+        intent.putExtra("YOUR_4N", ans4_n.getText().toString());
+        intent.putExtra("RIGHT_5N",res5_num);
+        intent.putExtra("YOUR_5N", ans5_n.getText().toString());
+
+        intent.putExtra("RIGHT_1D",res1_den);
+        intent.putExtra("YOUR_1D", ans1_d.getText().toString());
+        intent.putExtra("RIGHT_2D",res2_den);
+        intent.putExtra("YOUR_2D", ans2_d.getText().toString());
+        intent.putExtra("RIGHT_3D",res3_den);
+        intent.putExtra("YOUR_3D", ans3_d.getText().toString());
+        intent.putExtra("RIGHT_4D",res4_den);
+        intent.putExtra("YOUR_4D", ans4_d.getText().toString());
+        intent.putExtra("RIGHT_5D",res5_den);
+        intent.putExtra("YOUR_5D", ans5_d.getText().toString());
+
         startActivity(intent);
     }
 
@@ -233,16 +280,16 @@ int res1_den = myCom.getFirstResultDen(myCom2);
             return res;
         }
 
-        public int getFirstResultNum(CommonFractionTest b){
+        public String getFirstResultNum(CommonFractionTest b){
             CommonFractionTest res;
             res = this.sumFractionTo(b);
-            return res.numerator;
+            return String.valueOf(res.numerator);
         }
 
-        public int getFirstResultDen(CommonFractionTest b){
+        public String getFirstResultDen(CommonFractionTest b){
             CommonFractionTest res;
             res = this.sumFractionTo(b);
-            return res.denominator;
+            return String.valueOf(res.denominator);
         }
 
         public String printSecond(CommonFractionTest b, CommonFractionTest c){
@@ -264,18 +311,18 @@ int res1_den = myCom.getFirstResultDen(myCom2);
             return res;
         }
 
-        public int getSecondResultNum(CommonFractionTest b, CommonFractionTest c){
+        public String getSecondResultNum(CommonFractionTest b, CommonFractionTest c){
             CommonFractionTest res;
             res = this.sumFractionTo(b);
             res = res.sumFractionTo(c);
-            return res.numerator;
+            return String.valueOf(res.numerator);
         }
 
-        public int getSecondResultDen(CommonFractionTest b, CommonFractionTest c){
+        public String getSecondResultDen(CommonFractionTest b, CommonFractionTest c){
             CommonFractionTest res;
             res = this.sumFractionTo(b);
             res = res.sumFractionTo(c);
-            return res.denominator;
+            return String.valueOf(res.denominator);
         }
 
         public String printThird(CommonFractionTest b, CommonFractionTest c){
@@ -294,18 +341,18 @@ int res1_den = myCom.getFirstResultDen(myCom2);
                 res=res+" * ("+c.toString()+")";}
             return res;
         }
-        public int getThirdResultNum(CommonFractionTest b, CommonFractionTest c){
+        public String getThirdResultNum(CommonFractionTest b, CommonFractionTest c){
             CommonFractionTest res;
             res = b.multiply(c);
             res = res.sumFractionTo(this);
-            return res.numerator;
+            return String.valueOf(res.numerator);
         }
 
-        public int getThirdResultDen(CommonFractionTest b, CommonFractionTest c){
+        public String getThirdResultDen(CommonFractionTest b, CommonFractionTest c){
             CommonFractionTest res;
             res = b.multiply(c);
             res = this.sumFractionTo(res);
-            return res.denominator;
+            return String.valueOf(res.denominator);
         }
 
         public String printFourth(CommonFractionTest b, CommonFractionTest c){
@@ -320,18 +367,18 @@ int res1_den = myCom.getFirstResultDen(myCom2);
             return res;
         }
 
-        public int getFourthResultNum(CommonFractionTest b, CommonFractionTest c){
+        public String getFourthResultNum(CommonFractionTest b, CommonFractionTest c){
             CommonFractionTest res;
             res=this.multiply(b);
             res=res.divide(c);
-            return res.numerator;
+            return String.valueOf(res.numerator);
         }
 
-        public int getFourthResultDen(CommonFractionTest b, CommonFractionTest c){
+        public String getFourthResultDen(CommonFractionTest b, CommonFractionTest c){
             CommonFractionTest res;
             res=this.multiply(b);
             res=res.divide(c);
-            return res.denominator;
+            return String.valueOf(res.denominator);
         }
 
         public String printFifth(CommonFractionTest b, CommonFractionTest c, CommonFractionTest d){
@@ -345,19 +392,19 @@ int res1_den = myCom.getFirstResultDen(myCom2);
             return res;
         }
 
-        public int getFifthResultNum(CommonFractionTest b, CommonFractionTest c, CommonFractionTest d){
+        public String getFifthResultNum(CommonFractionTest b, CommonFractionTest c, CommonFractionTest d){
             CommonFractionTest res;
             res=b.sumFractionTo(c);
             res=this.multiply(res);
             res=res.divide(d);
-            return res.numerator;
+            return String.valueOf(res.numerator);
         }
 
-        public int getFifthResultDen(CommonFractionTest b, CommonFractionTest c, CommonFractionTest d){
+        public String getFifthResultDen(CommonFractionTest b, CommonFractionTest c, CommonFractionTest d){
             CommonFractionTest res;
             res=b.sumFractionTo(c);
             res=this.multiply(res);
             res=res.divide(d);
-            return res.denominator;
+            return String.valueOf(res.denominator);
         }}
 }
