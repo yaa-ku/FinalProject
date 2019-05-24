@@ -1,6 +1,8 @@
 package com.example.timetomath2;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Integer extends AppCompatActivity {
+
+    public SharedPreferences sPref;
+    public SharedPreferences.Editor editor;
 
     EditText ans1;
     EditText ans2;
@@ -50,7 +55,18 @@ public class Integer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_integer);
+
+        sPref = getSharedPreferences("app_settings", Context.MODE_PRIVATE);
+        editor = sPref.edit();
+        switch(sPref.getString("app_theme","")){
+            case "1":
+                setContentView(R.layout.activity_integer);
+                break;
+            case "2":
+                setContentView(R.layout.activity_integer2);
+                break;
+            default: setContentView(R.layout.activity_integer);
+        }
 
         ans1 = (EditText) findViewById(R.id.res1_int);
         ans2 = (EditText) findViewById(R.id.res2_int);
