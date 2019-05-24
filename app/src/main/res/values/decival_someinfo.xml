@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="infoDecimal">
+        \n <b> ВНИМАНИЕ!</b> В задании 3 и в задании 5 необходимо ввести дробь с 3-мя знаками после запятой. Округлять дробь при этом не нужно.
+    </string>
+</resources>
