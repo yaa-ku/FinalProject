@@ -1,6 +1,8 @@
 package com.example.timetomath2;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class CommonFractions extends AppCompatActivity {
+
+    public SharedPreferences sPref;
+    public SharedPreferences.Editor editor;
 
     EditText ans1_n;
     EditText ans2_n;
@@ -60,7 +65,17 @@ String res1_den = myCom.getFirstResultDen(myCom2);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_common_fractions);
+        sPref = getSharedPreferences("app_settings", Context.MODE_PRIVATE);
+        editor = sPref.edit();
+        switch(sPref.getString("app_theme","")){
+            case "1":
+                setContentView(R.layout.activity_common_fractions);
+                break;
+            case "2":
+                setContentView(R.layout.activity_common_fractions2);
+                break;
+            default: setContentView(R.layout.activity_common_fractions);
+        }
 
         ans1_n = (EditText) findViewById(R.id.num1);
         ans2_n = (EditText) findViewById(R.id.num2);
